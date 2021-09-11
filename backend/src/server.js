@@ -3,8 +3,8 @@ const app = express()
 const Places = require('./models/places')
 const guias = require('./models/guias')
 const cors = require('cors');
-
-
+const http = require('http');
+const server = http.Server(app);
 app.use(express.json())
 app.use(cors());
 

@@ -7,6 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  
 
 } from 'reactstrap';
 
@@ -17,23 +18,22 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="warning" light expand="md" className="fixed-top">
-        <NavbarBrand href="/">Traveling-Safe</NavbarBrand>
+      <Navbar className="bg-warning fixed-top" light expand="md">
+        <NavbarBrand href="/" className="ml-5">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="ml-auto mr-5" navbar>
             <NavItem>
-              <NavLink  className="text-center" href="/components/">Inicio</NavLink>
-            </NavItem>
-            <NavItem >
-              <NavLink   className="text-center" href="https://github.com/reactstrap/reactstrap">Lugares</NavLink>
+              <NavLink href="/contratarGuias">Guias</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="text-center" href="https://github.com/reactstrap/reactstrap">Guias Turisticos</NavLink>
+              <NavLink href="/visualizar/" >ver</NavLink>
             </NavItem>
-          
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            </NavItem>
           </Nav>
-          
+    
         </Collapse>
       </Navbar>
     </div>

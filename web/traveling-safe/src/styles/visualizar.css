@@ -1,0 +1,9 @@
+.img-fluid{
+    border-radius: 5px;
+    width: 648px;
+    height: auto;
+}
+
+body{
+    background-color: #FFFF;
+}
